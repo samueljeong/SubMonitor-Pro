@@ -1,61 +1,58 @@
-<p align="center">
-  <img src="./assets/app-icon.png" width="96" height="96" alt="SubMonitor Pro Icon" />
-</p>
+# SubMonitor Pro (`v0.4.0` · Universal Binary for Apple Silicon & Intel Macs)
 
-<h1 align="center">SubMonitor Pro (macOS)</h1>
+> **Revive any aging or idle 4K, 4.5K, or 5K iMac (2014–2020 27" 5K Intel iMacs & 2021–2024 24" M1/M3/M4 iMacs) as a flagship 60Hz Retina Monitor for your MacBook, Mac mini, or Mac Studio—without $129 hardware dongles, recurring subscriptions, or gutting the iMac.**
 
-<p align="center">
-  <strong>Turn an unused 24-inch Apple Silicon iMac into a native 4.5K 60Hz wired monitor over 1 cable.</strong><br/>
-  <a href="https://videofactories.com/submonitor/?lang=en&ref=github"><strong>Join the Free Beta Waitlist (EN) ↗</strong></a> ·
-  <a href="https://videofactories.com/submonitor/?lang=ko&ref=github"><strong>무료 베타 신청 (한국어) ↗</strong></a> ·
-  <a href="./README.ko.md">한국어 안내</a>
-</p>
+[![Live Store & Demo Videos](https://img.shields.io/badge/Live_Store_%26_49s_Hardware_Demo-videofactories.com-0ea5e9?style=for-the-badge)](https://videofactories.com/submonitor/?lang=en&ref=github)
+[![Download Universal DMG](https://img.shields.io/badge/Download_Universal_.dmg-v0.4.0_(macOS_12%2B)-10b981?style=for-the-badge)](https://github.com/samueljeong/SubMonitor-Pro/releases/tag/v0.4.0-beta)
 
 ---
 
-## Overview
+## 🔥 Watch the Unedited 49-Second Live Desk Hardware Demo (MacBook Pro + 24" 4.5K iMac)
 
-Apple discontinued hardware Target Display Mode on modern iMacs—leaving owners of unused 24-inch Apple Silicon iMacs to choose between wireless AirPlay lag, `$89.99` hardware dongles, or `$36–$72/yr` recurring subscriptions.
+👉 **[Click to Play the 49s 60fps Live Hardware Recording (with 6-Speaker Audio)](https://videofactories.com/submonitor/?lang=en&ref=github)**
+- Direct MP4 Stream (`1080p60`): https://videofactories.com/submonitor/assets/live-demo-real.mp4
 
-**SubMonitor Pro (`v0.4.0`, Build `13`)** is a lightweight native Swift + AppKit/SwiftUI utility for macOS `15.0+` (Sequoia) that connects your host MacBook / Mac to an idle 24-inch iMac over **a single Thunderbolt or USB-C cable**.
-
-- **18.5-Second Demo Video & Free Beta Signup:** [https://videofactories.com/submonitor/?lang=en&ref=github](https://videofactories.com/submonitor/?lang=en&ref=github)
-- **Direct 18.5s MP4 Demo (Actual App Window):** [demo-en.mp4](https://videofactories.com/submonitor/assets/demo-en.mp4)
-
-![SubMonitor Pro Full Dashboard Window](./assets/hero-dashboard-en.png)
+![SubMonitor Pro Live Desk Demo](https://videofactories.com/submonitor/assets/poster-live-demo-real.jpg)
 
 ---
 
-## Core Specifications & Single-Window Controls
+## ⚡ Why SubMonitor Pro Is Generations Ahead of Target Display Mode Workarounds
 
-1. **Single-Cable Offline Link (`~0.4 ms` RTT)**
-   - Communicates over Thunderbolt / USB-C offline IPv6 link-local networking—zero Wi-Fi lag and no internet connection required.
-2. **Dual Wired Display Modes**
-   - **Native 4.5K 1:1 (`4480×2520 @ 60Hz`)** for pixel-exact Retina text and code.
-   - **Lightweight QHD+ (`2560×1440 @ 60Hz`)** to save bandwidth on standard USB-C cables.
-3. **One Native Control Window (Menu Bar Popover & Dashboard)**
-   - **Display Brightness:** Smooth slider + global keyboard shortcuts (`⌃⌥-` / `⌃⌥=`).
-   - **6-Speaker 48kHz PCM Audio:** Toggle and control the iMac's built-in 6-speaker woofer sound system directly from your MacBook.
-   - **Interactive Arrangement Map:** Place the iMac Left, Right, Top, or Bottom in one click—automatically restores its exact position on reconnect.
-4. **Automatic macOS Sleep Sync**
-   - Observes `NSWorkspace.willSleepNotification` and `screensDidSleepNotification` on your host Mac so the iMac panel enters dark standby automatically and wakes right back up with your Mac.
-5. **8 Built-in Languages**
-   - English, Korean (`한국어`), Japanese (`日本語`), Simplified & Traditional Chinese, German, Spanish, and French.
-
-<p align="center">
-  <img src="./assets/hero-popover-en.png" width="420" alt="SubMonitor Pro Menu Bar Popover" />
-</p>
+| Feature | **SubMonitor Pro ($29)** | **Apple AirPlay** | **Luna Display ($129.99)** | **Duet Display (Sub)** | **$250 5K Driver Board Mod** |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **2014–2020 27" 5K Intel iMacs** | **⭕ Instant Revival (Auto Hardware Profile)** | ❌ Blocked by Apple | △ Sluggish · Requires Dongle | △ Heavy CPU Drivers | ⭕ Requires Risky Screen Teardown |
+| **2021–2024 24" 4.5K M1/M3/M4 iMacs** | **⭕ Native 4.5K 1:1 & QHD+ 60Hz** | △ High Wireless Lag | △ Requires Dongle | △ Subscription Required | ⭕ Destroys the iMac |
+| **Keeps Native iMac Computer Alive** | **⭕ Full Dual-Mac Use** | ⭕ Kept Alive | △ Clunky Switching | △ Windowed Only | ❌ **Permanently Kills the iMac** |
+| **1-Click 50:50 Split View** | **⭕ Side-by-Side (Host Mac + Native iMac)** | ❌ No | ❌ No | ❌ No | ❌ No |
+| **Smart Auto KVM (Mouse & Keyboard)** | **⭕ Auto OFF in Full Monitor / Auto ON in Split & Native** | ❌ Same Apple ID Only | ❌ No | ❌ No | ❌ No |
+| **MacBook PD Charging + Wired/Wi-Fi** | **⭕ 1-Cable Charge + 0.4ms ↔ 1s Auto Wi-Fi Handover** | ❌ No Charging | ❌ Occupies Port | △ Manual Setup | ❌ Wired Only |
+| **iMac 6-Speaker + Brightness Sliders** | **⭕ Native Menu Bar Sliders & Global Hotkeys** | ❌ No Brightness Control | ❌ No | ❌ No | △ Physical Buttons Only |
+| **Cost** | **$29 One-Time Lifetime (2 Macs)** | Free (Restricted) | $89.99–$129.99 + Shipping | $36–$72/yr Recurring | $250+ (Risk of Cracking Glass) |
 
 ---
 
-## Pricing & Free Beta Waitlist
+## 🧠 Automatic iMac Model & Hardware Decoder Optimizer (`v0.4.0 Build 15`)
 
-| Feature | SubMonitor Pro | Luna Display | Duet Display |
-| :--- | :--- | :--- | :--- |
-| **Connection** | **1 Thunderbolt or USB-C Cable** | Hardware Dongle Required | Cable or Network Streaming |
-| **Offline Latency** | **100% Offline IPv6 (`~0.4 ms` RTT)** | Varies by Wi-Fi / Cable | Varies by Network / Encoding |
-| **Brightness & 6-Speaker** | **Integrated in 1 Native Window** | Device-dependent | Plan-dependent |
-| **Pricing (USD)** | **$29 Planned Lifetime (`$0/mo`)** | `$89.99` + shipping | `$36–$72/yr` subscription |
+The moment your iMac connects, `iMacSubMonitorReceiver.app` queries the hardware `sysctl` model identifier (`iMac15,1` .. `iMac20,2`, `iMac21,1`, `Mac15,5`, etc.) and `VTIsHardwareDecodeSupported` to automatically configure the optimal zero-lag pipeline:
 
-> *Planned release price is a one-time **$29 USD** lifetime license with `$0` recurring subscription (finalized at beta exit). Free beta invites are open now:*
-> **[https://videofactories.com/submonitor/?lang=en&ref=github](https://videofactories.com/submonitor/?lang=en&ref=github)**
+- **2014–2015 27" 5K Intel iMac (`iMac15,1` / `iMac17,1`)**: Automatically switches to **100% hardware-accelerated H.264 + QHD+ (`2560×1440 @ 60fps`) + Metal CAS Retina Sharpening** so older Intel CPUs stay cool with zero software-decode frame drops—even over 802.11ac Wi-Fi (`18 Mbps` auto-cap).
+- **2017–2020 27" 5K Intel iMac & iMac Pro (`iMac18,3` / `iMac19,1` / `iMac20,1` / `iMacPro1,1`)**: Uses hardware **HEVC + Metal CAS Upscaling** up to 5K (`5120×2880 @ 60fps`).
+- **2021–2024 24" 4.5K Apple Silicon iMac (`M1` / `M3` / `M4`)**: Uses Apple Media Engine **HEVC 60fps** at pixel-exact **4.5K 1:1 (`4480×2520`)** or **QHD+ (`2560×1440`)**.
+
+---
+
+## 🎬 4 Topic-Segmented 16-Second Video Demos
+
+1. **4K/4.5K/5K iMac Revival & 1-Cable MacBook Charging**: https://videofactories.com/submonitor/assets/demo-1-revival-en.mp4
+2. **1-Click 50:50 Split View & Smart Auto KVM (Mouse/Keyboard Share)**: https://videofactories.com/submonitor/assets/demo-2-kvm-split-en.mp4
+3. **Wired (`0.4ms`) ↔ Same-Wi-Fi (`1s`) Auto Handover**: https://videofactories.com/submonitor/assets/demo-3-hybrid-wifi-en.mp4
+4. **5-Way Competitor Comparison (`$29` Lifetime vs `$129` Dongle & `$250` Board Mod)**: https://videofactories.com/submonitor/assets/demo-4-vs-competitors-en.mp4
+
+![SubMonitor Pro English Dashboard](https://videofactories.com/submonitor/assets/hero-dashboard-en.png)
+
+---
+
+## 📦 Download & Instant License Activation
+
+- **Official Storefront & Instant Checkout (`$29 USD` / `₩39,900` Lifetime, 2 Macs)**: https://videofactories.com/submonitor/?lang=en&ref=github
+- **한국어 공식 스토어 & 실제 촬영 시연 영상 보기**: https://videofactories.com/submonitor/?lang=ko&ref=github
